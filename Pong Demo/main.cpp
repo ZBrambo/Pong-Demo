@@ -176,8 +176,10 @@ int main()
 		ball.Draw();
 		cpuPaddle.Draw();
 		playerPaddle.Draw();
-		DrawText(TextFormat("Player Score: %d", player_score), 10, 10, 20, WHITE);
-		DrawText(TextFormat("CPU Score: %d", cpu_score), screenWidth - 200, 10, 20, WHITE);
+		DrawText(TextFormat("Player Score:"), 10, 10, 20, WHITE);
+		DrawText(TextFormat("%d", player_score), 10, 40, 20, WHITE);
+		DrawText(TextFormat("CPU Score:"), screenWidth - 125, 10, 20, WHITE);
+		DrawText(TextFormat("%d", cpu_score), screenWidth - 20, 40, 20, WHITE);
 
 		EndDrawing();
 	}
